@@ -1,12 +1,12 @@
 <template>
-  <div class="container">
-    <div class="nav">
+  <div >
+    <div class="navbar">
     <div class="logo">
         <img :src="require('@/assets/logo.png')" >
         <b>Astrapark</b>
          
       </div>
-    <div id="nav">
+    <div id="navbar">
       
       <router-link to="/">Home</router-link> 
       <router-link to="/about">About Us</router-link>
@@ -100,12 +100,13 @@ $themecolor: rgb(240, 62, 62);
     
   }
 }
-#nav {
+#navbar {
   padding: 2px;
   display:  inline-flex;
-  width: 100%;
+  justify-content: space-around;
+  width: 80%;
   flex-direction: row;
-  padding-left: 15%;
+  // padding-left: 15%;
   top: -5px;
   a {
     font-weight: bold;
@@ -125,10 +126,17 @@ $themecolor: rgb(240, 62, 62);
       color: $themecolor;
     }
 }
-.nav{
+.container{
+  float: left;
   width: 100%;
-  height: 60px;
-  display: inline-flex;
+  max-width: initial;
+  padding-right: 0;
+}
+.navbar{
+  width: 100%;
+  
+  height: 70px;
+  display: flex;
   flex-direction: row;
   background-color: rgb(237, 239, 241);
   .login{
@@ -142,8 +150,8 @@ $themecolor: rgb(240, 62, 62);
 }
 @media only screen and (max-width: 1350px) {
  
-  #nav{
-    padding-left: 10%;
+  #navbar{
+    padding-left: 5%;
     .login{
       padding-left: 25%;
       
@@ -159,11 +167,11 @@ $themecolor: rgb(240, 62, 62);
     padding-top: 0;
     
   }
-  .nav{
+  .navbar{
     align-items: center;
   }
-  #nav{
-    padding-left: 15%;
+  #navbar{
+    padding-left: 5%;
     .login{
       padding-left: 15%;
       
@@ -181,17 +189,17 @@ $themecolor: rgb(240, 62, 62);
       margin-top: 5px;
     }
   }
-  .nav{
+  .navbar{
     align-items: center;
   }
-  #nav{
-    padding-left: 10%;
+  #navbar{
+    padding-left: 5%;
     .login{
       padding-left: 10%;
     }
   }
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1025px) {
   .logo b{
     display: none;
   }
@@ -200,10 +208,10 @@ $themecolor: rgb(240, 62, 62);
     vertical-align: middle;
     margin-top: -15px;
   }
-  .nav{
+  .navbar{
     align-items: center;
   }
-  #nav{
+  #navbar{
     display: none;
     padding: 0;
     margin: 0;
@@ -225,7 +233,7 @@ $themecolor: rgb(240, 62, 62);
    img{
       margin-top: -20;
     }
-  .nav{
+  .navbar{
     align-items: center;
     width: 100%;
     background-color: white;
@@ -233,7 +241,7 @@ $themecolor: rgb(240, 62, 62);
       padding-left: 60%;
     }
   }
-  #nav{
+  #navbar{
     display: none;
     padding: 0;
     margin: 0;
