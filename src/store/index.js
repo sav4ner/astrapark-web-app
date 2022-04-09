@@ -1,27 +1,25 @@
 import { createStore } from "vuex";
-import axios from 'axios';
+import parkingModule from './modules/parking.module';
+import loginModule from './modules/login.module'
 
 export default createStore({
   state: {
-    parkings:[],
+    parkingState: parkingModule.state,
+    loginState: loginModule.state,
   },
   mutations: {
-    setParking: (state, parkings) => (state.parkings = parkings)
+    
   },
   
   getters:{
     
   },
   actions: {
-    async fetchParkings({commit}){
-      const res = await axios.get('http://sav4ner.pythonanywhere.com/api/v1/lots').then(res=> console.log(res.data)).catch(err=> console.log(err));
-      
-      commit('setPArking',res.data)
-    },
-    
+   
   },
   
   modules: {
-    
+    parkingModule,
+    loginModule,
   },
 });
