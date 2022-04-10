@@ -47,6 +47,7 @@ $themecolor: rgb(240, 62, 62);
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: $fontcolor;
+  overflow-x: hidden;
 }
 .tooltiptext {
   visibility: hidden;
