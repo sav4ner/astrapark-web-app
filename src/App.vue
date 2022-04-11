@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div class="sticky-top">
     <div class="navbar">
     <div class="logo">
         <img :src="require('@/assets/logo.png')" >
@@ -25,8 +25,18 @@
   </div>
   </div>
   <router-view />
+  <foot/>
 </template>
-
+<script>
+import foot from './components/foot.vue'
+export default {
+  name:'app',
+  component: {
+    foot,
+  }
+  
+}
+</script>
 <style lang="scss">
 @import url();
 
@@ -102,6 +112,7 @@ $themecolor: rgb(240, 62, 62);
   }
 }
 #navbar {
+
   padding: 2px;
   display:  inline-flex;
   justify-content: space-around;
@@ -134,8 +145,8 @@ $themecolor: rgb(240, 62, 62);
   padding-right: 0;
 }
 .navbar{
+   
   width: 100%;
-  
   height: 70px;
   display: flex;
   flex-direction: row;

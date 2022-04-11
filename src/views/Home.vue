@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="col-12 col-md-3 col-sm-6" style="height: 44vh; ">
-          <img :src="require('@/assets/images/happypacking.jpg')" style="height: 44vh; width:105%;padding-left: 5px; float:right;" >
+          <!-- <img :src="require('@/assets/images/happypacking.jpg')" style="height: 44vh; width:105%;padding-left: 5px; float:right;" > -->
         </div>
         <div class="col-12 col-md-3 col-sm-6" style="height: 44vh;  background-color:rgb(237, 239, 241);color:#2c3e50;">
           <div class="m-6">
@@ -32,10 +32,10 @@
           </div>
         </div>
         <div class="col-12 col-md-3 col-sm-6" style="height: 44vh; ">
-         <img :src="require('@/assets/images/happypacking.jpg')" style="height: 44vh; width:5vh" >
+         <!-- <img :src="require('@/assets/images/happypacking.jpg')" style="height: 44vh; width:5vh" > -->
         </div>
         <div class="col-12 col-md-3 col-sm-6" style="height: 44vh; ">
-          <img :src="require('@/assets/images/happypacking.jpg')" style="height: 44vh; width:52vh" >
+          <!-- <img :src="require('@/assets/images/happypacking.jpg')" style="height: 44vh; width:52vh" > -->
         </div>
         <div class="col-12 col-md-3 col-sm-6" style="height: 44vh; background-color:rgb(237, 239, 241);color:#2c3e50;">
           <div class="m-6">
@@ -51,7 +51,7 @@
           </div>
         </div>
         <div class="col-12 col-md-3 col-sm-6" style="height: 44vh; ">
-          <img :src="require('@/assets/images/happypacking.jpg')" style="height: 44vh; width:52vh; float:right; padding-left:15px;">
+          <!-- <img :src="require('@/assets/images/happypacking.jpg')" style="height: 44vh; width:52vh; float:right; padding-left:15px;"> -->
         </div>
         <div class="col-12 col-md-3 col-sm-6" style="height: 44vh; background-color:rgb(240, 62, 62);color:white;">
           <div class="m-6">
@@ -97,6 +97,8 @@ export default {
   $themecolor: rgb(240, 62, 62);
   .home{
     padding: 5px 30px;
+    padding-top: 2px;
+
   }
 </style>>
 
