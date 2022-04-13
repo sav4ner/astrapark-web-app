@@ -28,7 +28,8 @@
   <foot/>
 </template>
 <script>
-import foot from './components/foot.vue'
+// import foot from './components/foot.vue'
+import foot from './components/foot.vue';
 export default {
   name:'app',
   component: {

@@ -78,16 +78,17 @@
         Earum labore maiores corporis, iure exercitationem perspiciatis repudiandae eveniet sunt nihil cum dolore saepe tempora fugiat laboriosam, consequatur velit nostrum fugit natus quia iste fuga? Quia vero magnam velit laudantium?</p> -->
     </div>
   </div>
+  <foot/>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import foot from '../components/foot.vue'
 
 export default {
   name: "Home",
   components: {
-    
+    foot,
   },
 };
 </script>
